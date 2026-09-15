@@ -1,0 +1,45 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+    <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <title>Quên mật khẩu - Bước 1</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        </head>
+
+        <body class="bg-light d-flex align-items-center" style="min-height:100vh;">
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body p-4">
+                                <h4 class="text-center mb-2 text-primary">Quên mật khẩu</h4>
+                                <p class="text-center text-muted small mb-4">Bước 1/3: Nhập mã số sinh viên</p>
+
+                                <c:if test="${not empty error}">
+                                    <div class="alert alert-danger">${error}</div>
+                                </c:if>
+
+                                <form method="post" action="/forgot-password/request-otp">
+                                    <div class="mb-3">
+                                        <label class="form-label">Mã số sinh viên (MSSV)</label>
+                                        <input type="text" name="mssv" class="form-control" placeholder="VD: 24162130"
+                                            required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Gửi mã OTP</button>
+                                </form>
+
+                                <div class="text-center mt-3">
+                                    <a href="/login">← Quay lại đăng nhập</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+
+        </html>
