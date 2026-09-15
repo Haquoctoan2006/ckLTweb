@@ -1,4 +1,4 @@
-package vn.edu.ute.cklt_web.common.entity;
+package vn.edu.ute.cklt_web.entity;
 
 import jakarta.persistence.*;
 

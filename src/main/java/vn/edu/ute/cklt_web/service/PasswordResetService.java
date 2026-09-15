@@ -1,9 +1,9 @@
-package vn.edu.ute.cklt_web.auth.service;
+package vn.edu.ute.cklt_web.service;
 
-import vn.edu.ute.cklt_web.common.entity.PasswordResetOtp;
-import vn.edu.ute.cklt_web.common.entity.User;
-import vn.edu.ute.cklt_web.common.repository.PasswordResetOtpRepository;
-import vn.edu.ute.cklt_web.common.repository.UserRepository;
+import vn.edu.ute.cklt_web.entity.PasswordResetOtp;
+import vn.edu.ute.cklt_web.entity.User;
+import vn.edu.ute.cklt_web.repository.PasswordResetOtpRepository;
+import vn.edu.ute.cklt_web.repository.UserRepository;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.crypto.password.PasswordEncoder;

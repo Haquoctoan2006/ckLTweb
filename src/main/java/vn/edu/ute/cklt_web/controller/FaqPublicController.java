@@ -1,4 +1,4 @@
-package vn.edu.ute.cklt_web.faq.controller;
+package vn.edu.ute.cklt_web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
