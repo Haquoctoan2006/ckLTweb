@@ -1,6 +1,6 @@
-package vn.edu.ute.cklt_web.auth.controller;
+package vn.edu.ute.cklt_web.controller;
 
-import vn.edu.ute.cklt_web.auth.service.PasswordResetService;
+import vn.edu.ute.cklt_web.service.PasswordResetService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

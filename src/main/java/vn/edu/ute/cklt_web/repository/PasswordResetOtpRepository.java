@@ -1,6 +1,6 @@
-package vn.edu.ute.cklt_web.common.repository;
+package vn.edu.ute.cklt_web.repository;
 
-import vn.edu.ute.cklt_web.common.entity.PasswordResetOtp;
+import vn.edu.ute.cklt_web.entity.PasswordResetOtp;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
