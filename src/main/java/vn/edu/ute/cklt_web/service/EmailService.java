@@ -23,4 +23,15 @@ public class EmailService {
 
         mailSender.send(message);
     }
+
+    @Async
+    public void sendConsultationResultEmail(String toEmail, String ticketCode) {
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setTo(toEmail);
+        message.setSubject("Kết quả tư vấn QAUTE Helpdesk");
+        message.setText("Ticket " + ticketCode
+                + " đã có kết quả tư vấn. Vui lòng đăng nhập hệ thống để xem chi tiết.");
+
+        mailSender.send(message);
+    }
 }
